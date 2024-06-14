@@ -11,7 +11,7 @@ gulp.task('server', function() {
 
     browserSync({
         server: {
-            baseDir: "doсs"
+            baseDir: "docs"
         }
     });
 
@@ -24,7 +24,7 @@ gulp.task('styles', function() {
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest("doсs/css"))
+        .pipe(gulp.dest("docs/css"))
         .pipe(browserSync.stream());
 });
 
@@ -36,20 +36,20 @@ gulp.task('watch', function() {
 gulp.task('html', function () {
     return gulp.src("src/*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest("doсs/"));
+        .pipe(gulp.dest("docs"));
 });
 
 
 gulp.task('icons', function () {
     return gulp.src("src/icons/**/*")
-        .pipe(gulp.dest("doсs/icons"));
+        .pipe(gulp.dest("docs/icons"));
 });
 
 
 gulp.task('images', function () {
     return gulp.src("src/img/**/*")
         .pipe(imagemin())
-        .pipe(gulp.dest("doсs/img"));
+        .pipe(gulp.dest("docs/img"));
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'icons', 'html', 'images'));
