@@ -1,7 +1,7 @@
 # ProjectStoreGame
 Верстка создана при помощи свойств CSS Grid. Готовый сайт при помощи gulp собран в папку docs. Для его просмотра, перейдите по [ссылке](https://artemkis.github.io/ProjectStoreGame/)
 
-![Logotype](./docs/img/banner-2.jpg)
+![Logotype](./docs/img/banner-2.png)
 ## Инструкция по сборке проекта
 
 1. Cклонируйте репозиторий: 
