@@ -1,5 +1,5 @@
 # ProjectStoreGame
-Верстка сайта построена на свойствах CSS Grid. Готовый сайт при помощи gulp собран в папку docs. Для его просмотра, перейдите по [ссылке](https://artemkis.github.io/ProjectStoreGame/)
+Верстка сайта построена на свойствах CSS Grid. Сайт адаптирован под мобильные устройства. Готовый сайт при помощи gulp собран в папку docs. Для его просмотра, перейдите по [ссылке](https://artemkis.github.io/ProjectStoreGame/)
 
 ![Logotype](./docs/img/banner-2.png)
 ## Инструкция по сборке проекта
